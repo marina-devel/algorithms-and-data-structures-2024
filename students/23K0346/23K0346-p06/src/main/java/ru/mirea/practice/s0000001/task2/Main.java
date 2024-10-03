@@ -2,13 +2,18 @@ package ru.mirea.practice.s0000001.task2;
 
 public abstract class Main {
     public static void main(String[] args) {
-        Nameable planet = new Planet("Mars");
-        Nameable car = new Car("Tesla Model S");
-        Nameable animal = new Animal("Tiger");
+        // Создаем массив объектов типа Printable
+        Printable[] printables = new Printable[]{
+            new Book("The Great Gatsby"),
+            new Magazine("National Geographic"),
+            new Book("1984"),
+            new Magazine("TIME")
+        };
 
-        System.out.println("Planet name: " + planet.getName());
-        System.out.println("Car name: " + car.getName());
-        System.out.println("Animal name: " + animal.getName());
+        // Проходим по массиву и вызываем метод print() для каждого объекта
+        for (Printable printable : printables) {
+            printable.print();
+        }
     }
 }
 

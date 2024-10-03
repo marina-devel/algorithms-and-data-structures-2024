@@ -1,9 +1,9 @@
-package ru.mirea.practice.s0000001.task2;
+package ru.mirea.practice.s0000001.task1;
 
-public class Animal implements Nameable {
+public class Car implements Nameable {
     private String name;
 
-    public Animal(String name) {
+    public Car(String name) {
         this.name = name;
     }
 
@@ -12,4 +12,3 @@ public class Animal implements Nameable {
         return name;
     }
 }
-
